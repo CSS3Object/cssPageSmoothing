@@ -1,7 +1,7 @@
 # CSS3实现的页面平滑效果
     效果如下：
 ![](gif.gif)
-fdfds
+
     css代码
 ```angularjs
 @font-face {
