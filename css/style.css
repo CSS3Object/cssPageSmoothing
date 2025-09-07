@@ -1,3 +1,15 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --accent-color: #e23a6e;
+    --text-color: #333;
+    --background-color: #ddd;
+    --section-bg-1: #fff;
+    --section-bg-2: #fa96b5;
+    --transition-speed: 0.6s;
+    --shadow: 1px 1px 1px rgba(151,24,64,0.2);
+}
+
 @font-face {
     font-family: "Raphaelicons";
     src:url("../fonts/raphaelicons-webfont.eot") format('eot'),
@@ -10,10 +22,10 @@
 }
 body{
     font-family: Georgia,Serif;
-    background: #ddd;
+    background: var(--background-color);
     font-weight: 400;
     font-size: 15px;
-    color:#333;
+    color: var(--text-color);
     overflow: hidden;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
@@ -29,7 +41,7 @@ body{
 }
 a{
     text-decoration: none;
-    color:#555;
+    color: var(--secondary-color);
 }
 .clr{
     width: 0;
@@ -64,10 +76,10 @@ a{
     z-index: 10;
     font-weight: 700;
     font-size: 16px;
-    background: #e23a6e;
+    background: var(--accent-color);
     text-align: center;
     color:#fff;
-    text-shadow:1px 1px 1px rgba(151,24,64,0.2);
+    text-shadow: var(--shadow);
 }
 #st-control-1,#st-control-1+a{
     left: 0%;
@@ -129,7 +141,7 @@ a{
     transition: all  0.6s ease-in-out;
 }
 .st-panel{
-    background: #fff;
+    background: var(--section-bg-1);
     overflow: hidden;
 }
 #st-control-1:checked~.st-scroll{
@@ -170,7 +182,7 @@ a{
 .st-desc{
     width: 200px;
     height: 200px;
-    background: #fa96b5;
+    background: var(--section-bg-2);
     position: absolute;
     top: 0;
     left:50%;
@@ -203,7 +215,7 @@ a{
     text-shadow:1px 1px 1px rgba(151,24,64,0.2);
 }
 .st-panel h2{
-    color:#e23a6e;
+    color: var(--accent-color);
     font-size: 54px;
     line-height: 54px;
     text-align: center;
@@ -213,7 +225,7 @@ a{
     left: 10%;
     top: 50%;
     margin-top:-70px;
-    text-shadow:1px 1px 1px rgba(151,24,64,0.2);
+    text-shadow: var(--shadow);
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -355,7 +367,7 @@ a{
     }
 }
 .st-color{
-    background: #fa96b5;
+    background: var(--section-bg-2);
 }
 .st-color .st-desc{
     background:#fff;
